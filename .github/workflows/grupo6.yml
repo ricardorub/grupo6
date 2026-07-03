@@ -13,3 +13,22 @@ env:
   VARIABLE1: "valor1"
   VARIABLE2: "valor2"
   VARIABLE3: "valor3"
+
+# 4. Trabajos y pasos de ejecución
+jobs:
+  ejecucion_grupo6:
+    runs-on: ubuntu-latest
+    steps:
+    
+      # Paso anterior: Saludo al grupo
+      - name: Prueba de mensajes
+        run: |
+          echo "¡Hola Grupo 6! Bienvenidos a la ejecución automatizada de GitHub Actions."
+          echo "El entorno se ha configurado correctamente."
+
+ # Nuevo paso solicitado: Mostrar las tres variables de entorno
+      - name: Variables creada en el workflow
+        run: |
+          echo "La primera variable contiene: ${{ env.VARIABLE1 }}"
+          echo "La segunda variable contiene: ${{ env.VARIABLE2 }}"
+          echo "La tercera variable contiene: ${{ env.VARIABLE3 }}"
