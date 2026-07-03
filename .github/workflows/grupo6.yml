@@ -1,2 +1,6 @@
 # Nombre del workflow
 name: grupo6
+on:
+  push:
+    branches:
+      - main
