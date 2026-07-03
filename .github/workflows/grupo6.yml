@@ -8,7 +8,7 @@ on:
       - main
   workflow_dispatch:
 
-# 3. Las tres variables de entorno
+# 3. Las tres variables de entorno personalizadas
 env:
   VARIABLE1: "valor1"
   VARIABLE2: "valor2"
