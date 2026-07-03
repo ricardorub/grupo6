@@ -1,3 +1,9 @@
 # 1. El nombre del workflow es grupo6
 name: grupo6
 
+# 2. Se activa por push en la rama principal o por botón 
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
