@@ -19,19 +19,26 @@ jobs:
   ejecucion_grupo6:
     runs-on: ubuntu-latest
     steps:
+      # Paso 1: Saludo al grupo
       - name: Prueba de mensajes
         run: |
           echo "¡Hola Grupo 6! Bienvenidos a la ejecución automatizada de GitHub Actions."
 
+      # Paso 2: Mostrar variables personalizadas
       - name: Variables creada en el workflow
         run: |
           echo "La primera variable contiene: ${{ env.VARIABLE1 }}"
           echo "La segunda variable contiene: ${{ env.VARIABLE2 }}"
-          echo "La tercera variable contiene: ${{ env.VARIABLE3 }}"
+          echo "La tercera variable contiene: ${{ env.VERSION }}"
 
-      # Nuevo paso: Mostrando las variables por defecto de GitHub
-      - name: Mostrar variables del repositorio de GitHub
+      # Paso 3: Nombre solicitado con las 3 variables de GitHub Actions
+      - name: Variables del entorno del Github Actions
         run: |
-          echo "1. Nombre completo del repositorio: $GITHUB_REPOSITORY"
+          echo "1. Nombre del repositorio: $GITHUB_REPOSITORY"
           echo "2. Dueño del repositorio: ${{ github.repository_owner }}"
-          echo "3. Rama que originó el evento: $GITHUB_REF_NAME"
+          echo "3. Rama del repositorio: $GITHUB_REF_NAME"
+
+          echo "Variable 1 de la web: ${{ vars.VARIABLE_WEB_1 }}"
+          echo "Variable 2 de la web: ${{ vars.VARIABLE_WEB_2 }}"
+          echo "Variable 3 de la web: ${{ vars.VARIABLE_WEB_3 }}"
+          
