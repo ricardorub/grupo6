@@ -41,4 +41,15 @@ jobs:
           echo "Variable 1 de la web: ${{ vars.VARIABLE_WEB_1 }}"
           echo "Variable 2 de la web: ${{ vars.VARIABLE_WEB_2 }}"
           echo "Variable 3 de la web: ${{ vars.VARIABLE_WEB_3 }}"
-          
+
+      # Paso 4: Condicional Verdadera (Se va a ejecutar)
+      - name: Con Despedida
+        if: ${{ env.MOSTRAR_DESPEDIDA == 'true' }}
+        run: |
+          echo "¡Hasta luego, Grupo 6! La automatización ha finalizado con éxito."
+
+      # Paso 5: Condicional Falsa (No se va a ejecutar)
+      - name: Sin despedida
+        if: ${{ env.MOSTRAR_DESPEDIDA == 'false' }}
+        run: |
+          echo "Este mensaje no saldrá en la consola porque la condición es falsa."
