@@ -13,6 +13,8 @@ env:
   VARIABLE1: "valor1"
   VARIABLE2: "valor2"
   VARIABLE3: "valor3"
+  VARIABLE4: "valor4"
+
 
 # 4. Trabajos y pasos de ejecución
 jobs:
