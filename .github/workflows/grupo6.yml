@@ -48,7 +48,7 @@ jobs:
       - name: Con Despedida
         if: ${{ env.MOSTRAR_DESPEDIDA == 'true' }}
         run: |
-          echo "¡Hasta luego, Grupo 6! Nos vemos en el siguiente ciclo."
+          echo "¡Hasta luego Grupo 6! Nos vemos en el siguiente ciclo."
 
       # Paso 5: Condicional Falsa (No se va a ejecutar)
       - name: Sin despedida
