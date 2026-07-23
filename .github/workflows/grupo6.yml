@@ -24,7 +24,7 @@ jobs:
       # Paso 1: Saludo al grupo
       - name: Prueba de mensajes
         run: |
-          echo "¡Hola Grupo 6! Bienvenidos a la ejecución automatizada de GitHub Actions."
+          echo "¡Hola Grupo 6! Es la presentacion final del informe!."
 
       # Paso 2: Mostrar variables personalizadas
       - name: Variables creada en el workflow
